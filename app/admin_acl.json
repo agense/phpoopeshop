@@ -1,0 +1,50 @@
+{
+	"Guest" : {
+      "denied" : {},
+      "Access" : ["login", "index"]
+	},
+	"Editor" : {
+      "denied" : { },
+	  "Access" : ["logout"],
+	  "Dashboard": ["*"],
+	  "Brands": ["*"],
+	  "Categories": ["*"],
+	  "Products": ["*"],
+	  "Materials": ["*"],
+	  "Colors": ["*"],
+	  "Collections": ["*"],
+	  "Orders": ["*"]
+    },
+	"Admin" : {
+		"denied" : {
+			"Access" : ["login"]
+		},
+		"Access" : ["*"],
+		"Dashboard": ["*"],
+		"Brands": ["*"],
+		"Categories": ["*"],
+		"Products": ["*"],
+		"Materials": ["*"],
+		"Colors": ["*"],
+		"Collections": ["*"],
+		"Orders": ["*"],
+		"Pages" : ["*"]
+	},
+	"SuperAdmin": {
+		"denied" : {
+			"Access" : ["login"]
+		},
+		"Access" : ["*"],
+		"Dashboard": ["*"],
+		"Brands": ["*"],
+		"Categories": ["*"],
+		"Products": ["*"],
+		"Materials": ["*"],
+		"Colors": ["*"],
+		"Collections": ["*"],
+		"Orders": ["*"],
+		"Pages" : ["*"],
+		"Settings" : ["*"],
+		"Administrators" : ["*"]
+	}
+}

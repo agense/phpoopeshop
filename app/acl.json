@@ -1,0 +1,28 @@
+{
+	"Guest" : {
+      "denied" : {
+        "Users" : ["*"]
+      },
+      "NotFound" : ["*"],
+      "Home" : ["*"],
+      "Categories" : ["*"],
+      "Products" : ["*"],
+      "Collections" : ["*"],
+      "Register" : ["login", "register"], 
+      "Restricted" : ["*"],
+      "Cart": ["*"],
+      "Whishlist" : ["add", "index"],
+      "Order": ["index"],
+      "Pages": ["*"]
+	},
+
+	"LoggedIn" : {
+      "Users" : ["*"], 
+      "Whishlist" : ["*"],     
+      "denied" : {
+      	"Register": ["login","register"]
+      },
+      "Register" : ["logout"],
+      "Order" : ["orderConfirmed"]
+	}
+}
